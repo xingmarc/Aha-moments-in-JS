@@ -22,7 +22,30 @@ when defined through `Object.defineProperty`, both `data property` and `accessor
 but an `accessor property` has `get` and `set`
 
 
-* #### ES6 has formalized the `__proto__` property.
+* #### ES6 minor changes: 
+
+1, formalized the `__proto__` property.
+
+
+2, Safe integers
+```
+Number.MAX_SAFE_INTEGER = 2^53
+Number.MIN_SAFE_INTEGER = -2^53
+Number.isSafeInteger(num)
+```
+3, New Math methods:
+
+`Math.acosh(x)`, `Math.asinh(x)`, `Math.atanh(x)`
+
+`Math.cbrt(x)` The cubed root of `x`
+
+`Math.log1p(x)`: The natural logarithm of `1 + x`, `Math.log2(x)`, `Math.log10(x)`
+
+
+`Math.trunc(x)`: Remove the fration from a float.
+
+4, UTF-16 support:
+`codePointAt()` method.
 
 
 * #### The `executor` in `new Promise()` is executed immediately.
